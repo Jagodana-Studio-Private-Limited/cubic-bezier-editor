@@ -1,27 +1,32 @@
 export const siteConfig = {
   // ====== CUSTOMIZE THESE FOR EACH TOOL ======
-  name: "{{TOOL_NAME}}",
-  title: "{{TOOL_TITLE}}",
-  description: "{{TOOL_DESCRIPTION}}",
-  url: "https://{{TOOL_SLUG}}.jagodana.com",
+  name: "Cubic Bezier Editor",
+  title: "Cubic Bezier Editor - Visual CSS Easing Function Creator",
+  description:
+    "Create and preview CSS cubic-bezier() timing functions visually. Drag control points, compare curves, pick presets, and copy CSS instantly.",
+  url: "https://cubic-bezier-editor.tools.jagodana.com",
   ogImage: "/opengraph-image",
 
   // Header
-  headerIcon: "Wrench", // lucide-react icon name (e.g., Image, Map, Code, Palette, Globe, FileSearch)
+  headerIcon: "Spline", // lucide-react icon name
   // Brand gradient colors for Tailwind are in globals.css (--brand / --brand-accent)
-  // Use text-brand, from-brand, to-brand-accent etc. in components
-  brandAccentColor: "#06b6d4", // hex accent for OG image gradient (must match --brand-accent in globals.css)
+  brandAccentColor: "#6366f1", // hex accent for OG image gradient (must match --brand-accent in globals.css)
 
   // SEO
   keywords: [
-    "{{KEYWORD_1}}",
-    "{{KEYWORD_2}}",
-    "{{KEYWORD_3}}",
+    "cubic bezier editor",
+    "css easing function",
+    "animation timing",
+    "cubic-bezier generator",
+    "css transition timing",
+    "bezier curve editor",
+    "css animation curve",
+    "easing curve tool",
   ],
-  applicationCategory: "DeveloperApplication", // or "DesignApplication", "UtilitiesApplication"
+  applicationCategory: "DeveloperApplication",
 
   // Theme
-  themeColor: "#10b981", // used in manifest and meta tags
+  themeColor: "#3b82f6",
 
   // Branding
   creator: "Jagodana",
@@ -31,51 +36,55 @@ export const siteConfig = {
   // Social Profiles (for Organization schema sameAs)
   socialProfiles: [
     "https://twitter.com/jagodana",
-    // Add more: LinkedIn, YouTube, etc.
   ],
 
   // Links
   links: {
-    github: "https://github.com/Jagodana-Studio-Private-Limited/{{TOOL_SLUG}}",
+    github: "https://github.com/Jagodana-Studio-Private-Limited/cubic-bezier-editor",
     website: "https://jagodana.com",
   },
 
   // Footer
   footer: {
-    about: "{{FOOTER_ABOUT_DESCRIPTION}}",
+    about:
+      "Cubic Bezier Editor is a free, browser-based visual tool for crafting CSS cubic-bezier() timing functions. Drag control points, preview animations in real time, and copy CSS instantly — no signup required.",
     featuresTitle: "Features",
     features: [
-      "{{FEATURE_1}}",
-      "{{FEATURE_2}}",
-      "{{FEATURE_3}}",
-      "{{FEATURE_4}}",
+      "Visual drag-and-drop control points",
+      "Real-time animation preview",
+      "20+ built-in easing presets",
+      "Curve comparison mode",
     ],
   },
 
   // Hero Section
   hero: {
-    badge: "{{HERO_BADGE_TEXT}}",
-    titleLine1: "{{HERO_TITLE_LINE_1}}",
-    titleGradient: "{{HERO_TITLE_GRADIENT_TEXT}}",
-    subtitle: "{{HERO_SUBTITLE}}",
+    badge: "Free CSS Animation Tool",
+    titleLine1: "Craft Perfect",
+    titleGradient: "CSS Easing Curves",
+    subtitle:
+      "Drag control points on the interactive canvas to shape your cubic-bezier() timing function. Preview animations live, choose from presets, and copy the CSS in one click.",
   },
 
   // Feature Cards (shown on homepage)
   featureCards: [
     {
-      icon: "{{FEATURE_ICON_1}}",
-      title: "{{FEATURE_CARD_TITLE_1}}",
-      description: "{{FEATURE_CARD_DESC_1}}",
+      icon: "🖱️",
+      title: "Drag & Drop Editor",
+      description:
+        "Visually drag P1 and P2 control points on the SVG canvas to sculpt any bezier curve imaginable.",
     },
     {
-      icon: "{{FEATURE_ICON_2}}",
-      title: "{{FEATURE_CARD_TITLE_2}}",
-      description: "{{FEATURE_CARD_DESC_2}}",
+      icon: "▶️",
+      title: "Live Preview",
+      description:
+        "Watch an animated ball traverse the curve with your exact timing function before you copy the CSS.",
     },
     {
-      icon: "{{FEATURE_ICON_3}}",
-      title: "{{FEATURE_CARD_TITLE_3}}",
-      description: "{{FEATURE_CARD_DESC_3}}",
+      icon: "📋",
+      title: "Instant CSS Copy",
+      description:
+        "One click copies the complete cubic-bezier() CSS snippet, ready to paste into your stylesheet.",
     },
   ],
 
@@ -121,54 +130,62 @@ export const siteConfig = {
 
   // HowTo Steps (drives HowTo JSON-LD schema for rich results)
   howToSteps: [
-    { name: "{{STEP_1_NAME}}", text: "{{STEP_1_TEXT}}", url: "" },
-    { name: "{{STEP_2_NAME}}", text: "{{STEP_2_TEXT}}", url: "" },
-    { name: "{{STEP_3_NAME}}", text: "{{STEP_3_TEXT}}", url: "" },
+    {
+      name: "Drag control points",
+      text: "Click and drag the P1 (blue) or P2 (indigo) handle on the SVG canvas to reshape the bezier curve.",
+      url: "",
+    },
+    {
+      name: "Preview the animation",
+      text: "Click the Play button to watch an animated ball move along your easing curve at the selected duration.",
+      url: "",
+    },
+    {
+      name: "Copy the CSS",
+      text: "Click the Copy button next to the CSS output field to copy the cubic-bezier() value to your clipboard.",
+      url: "",
+    },
   ],
-  howToTotalTime: "PT2M", // ISO 8601 duration (e.g., PT2M = 2 minutes)
+  howToTotalTime: "PT1M",
 
   // FAQ (drives both the FAQ UI section and FAQPage JSON-LD schema)
   faq: [
     {
-      question: "{{FAQ_QUESTION_1}}",
-      answer: "{{FAQ_ANSWER_1}}",
+      question: "What is a cubic-bezier() function in CSS?",
+      answer:
+        "A CSS cubic-bezier() function defines a custom timing curve for transitions and animations using four numbers: x1, y1, x2, y2. These control the two 'handles' of a cubic Bézier curve between the points (0,0) and (1,1), letting you create any easing effect from linear to bouncy.",
     },
     {
-      question: "{{FAQ_QUESTION_2}}",
-      answer: "{{FAQ_ANSWER_2}}",
+      question: "How do I use this Cubic Bezier Editor?",
+      answer:
+        "Drag the blue (P1) and indigo (P2) handles on the canvas to reshape the curve, or type values directly in the number inputs. Hit Play to preview the animation at your chosen duration, pick a preset from the buttons, then click Copy to grab the CSS snippet.",
     },
     {
-      question: "{{FAQ_QUESTION_3}}",
-      answer: "{{FAQ_ANSWER_3}}",
+      question: "Can the Y values go outside 0–1?",
+      answer:
+        "Yes! The X values (x1 and x2) must stay between 0 and 1, but the Y values (y1 and y2) can exceed this range to create overshoot/undershoot effects — useful for spring-like animations. The editor allows Y values from -0.5 to 1.5.",
     },
     {
-      question: "{{FAQ_QUESTION_4}}",
-      answer: "{{FAQ_ANSWER_4}}",
+      question: "What presets are available?",
+      answer:
+        "The editor includes CSS standard presets (linear, ease, ease-in, ease-out, ease-in-out) plus extras like ease-in-cubic, ease-out-cubic, ease-in-expo, ease-out-expo, ease-in-back, ease-out-back, and a snappy spring-like curve.",
+    },
+    {
+      question: "Is this tool free and private?",
+      answer:
+        "Completely free and 100% client-side. All computation happens in your browser — nothing is sent to any server.",
     },
   ],
 
   // ====== PAGES (for sitemap + per-page SEO) ======
-  // Add every route here. Sitemap and generatePageMetadata() read from this.
   pages: {
     "/": {
-      title: "{{TOOL_TITLE}}",
-      description: "{{TOOL_DESCRIPTION}}",
+      title: "Cubic Bezier Editor - Visual CSS Easing Function Creator",
+      description:
+        "Create and preview CSS cubic-bezier() timing functions visually. Drag control points, compare curves, pick presets, and copy CSS instantly.",
       changeFrequency: "weekly" as const,
       priority: 1,
     },
-    // Example page (DELETE when starting your tool, or customize)
-    "/about": {
-      title: "About - {{TOOL_NAME}}",
-      description: "Learn more about {{TOOL_NAME}} and how it works.",
-      changeFrequency: "monthly" as const,
-      priority: 0.7,
-    },
-    // "/blog": {
-    //   title: "Blog - {{TOOL_NAME}}",
-    //   description: "Tips, tutorials, and updates about {{TOOL_NAME}}.",
-    //   changeFrequency: "weekly" as const,
-    //   priority: 0.8,
-    // },
   },
 } as const;
 
